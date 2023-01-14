@@ -11,6 +11,9 @@
 		8DA47AB1261A5DE00035FB20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA47AB0261A5DE00035FB20 /* ContentView.swift */; };
 		8DA47AB3261A5DE10035FB20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA47AB2261A5DE10035FB20 /* Assets.xcassets */; };
 		8DA47AB6261A5DE10035FB20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA47AB5261A5DE10035FB20 /* Preview Assets.xcassets */; };
+		8DA47AC6261A5F7E0035FB20 /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA47AC5261A5F7E0035FB20 /* CoreManager.swift */; };
+		8DA47AD1261A8D7C0035FB20 /* MusicAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DA47ACF261A8D7C0035FB20 /* MusicAppModel.xcdatamodeld */; };
+		C4A753A5297287210051A813 /* MusicAppV2ToV3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = C4A753A4297287210051A813 /* MusicAppV2ToV3.xcmappingmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,11 @@
 		8DA47AB2261A5DE10035FB20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DA47AB5261A5DE10035FB20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8DA47AB7261A5DE10035FB20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DA47AC5261A5F7E0035FB20 /* CoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreManager.swift; sourceTree = "<group>"; };
+		8DA47AD0261A8D7C0035FB20 /* MusicAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicAppModel.xcdatamodel; sourceTree = "<group>"; };
+		8DA47AD3261A8EA60035FB20 /* MusicAppModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MusicAppModel 2.xcdatamodel"; sourceTree = "<group>"; };
+		C4A753A3297286140051A813 /* MusicAppModel 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MusicAppModel 3.xcdatamodel"; sourceTree = "<group>"; };
+		C4A753A4297287210051A813 /* MusicAppV2ToV3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = MusicAppV2ToV3.xcmappingmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +60,14 @@
 		8DA47AAD261A5DE00035FB20 /* AlbumApp */ = {
 			isa = PBXGroup;
 			children = (
+				8DA47AC4261A5F700035FB20 /* Managers */,
 				8DA47AAE261A5DE00035FB20 /* AlbumAppApp.swift */,
 				8DA47AB0261A5DE00035FB20 /* ContentView.swift */,
 				8DA47AB2261A5DE10035FB20 /* Assets.xcassets */,
 				8DA47AB7261A5DE10035FB20 /* Info.plist */,
 				8DA47AB4261A5DE10035FB20 /* Preview Content */,
+				8DA47ACF261A8D7C0035FB20 /* MusicAppModel.xcdatamodeld */,
+				C4A753A4297287210051A813 /* MusicAppV2ToV3.xcmappingmodel */,
 			);
 			path = AlbumApp;
 			sourceTree = "<group>";
@@ -67,6 +78,14 @@
 				8DA47AB5261A5DE10035FB20 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DA47AC4261A5F700035FB20 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8DA47AC5261A5F7E0035FB20 /* CoreManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DA47AC6261A5F7E0035FB20 /* CoreManager.swift in Sources */,
+				C4A753A5297287210051A813 /* MusicAppV2ToV3.xcmappingmodel in Sources */,
+				8DA47AD1261A8D7C0035FB20 /* MusicAppModel.xcdatamodeld in Sources */,
 				8DA47AB1261A5DE00035FB20 /* ContentView.swift in Sources */,
 				8DA47AAF261A5DE00035FB20 /* AlbumAppApp.swift in Sources */,
 			);
@@ -328,6 +350,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8DA47ACF261A8D7C0035FB20 /* MusicAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4A753A3297286140051A813 /* MusicAppModel 3.xcdatamodel */,
+				8DA47AD3261A8EA60035FB20 /* MusicAppModel 2.xcdatamodel */,
+				8DA47AD0261A8D7C0035FB20 /* MusicAppModel.xcdatamodel */,
+			);
+			currentVersion = C4A753A3297286140051A813 /* MusicAppModel 3.xcdatamodel */;
+			path = MusicAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8DA47AA3261A5DE00035FB20 /* Project object */;
 }

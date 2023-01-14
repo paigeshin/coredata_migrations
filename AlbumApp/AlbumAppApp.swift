@@ -10,8 +10,11 @@ import SwiftUI
 @main
 struct AlbumAppApp: App {
     var body: some Scene {
+        
+        let manager = CoreDataManager.shared
+        
         WindowGroup {
-            ContentView()
+            ContentView(manager: manager)
         }
     }
 }
